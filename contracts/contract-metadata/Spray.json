@@ -1,0 +1,728 @@
+{
+  "contractAddress": "0xe1c8bef0ee243062e169b26d68f440f7d69c7fe7",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/Spray.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/Spray.sol/Spray.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xe1c8bef0ee243062e169b26d68f440f7d69c7fe7"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xe1c8bef0ee243062e169b26d68f440f7d69c7fe7",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xe1c8bef0ee243062e169b26d68f440f7d69c7fe7",
+      "txHash": "0x9b4e9e6efd6bcd21b1d4bce829811bc18121144994e45a78f17a88fee90027db",
+      "deployedAt": "2026-10-19T21:59:34.021Z"
+    },
+    {
+      "chain": "Arc Testnet",
+      "address": "0xe97a64a69599a014ac27c549fb081408d842d6bd",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xe97a64a69599a014ac27c549fb081408d842d6bd",
+      "txHash": "0xe62fbacafba5f3bdafad985a80ff77af6d0cb9b89b3d16eb63996c4132c9bbb3",
+      "deployedAt": "2026-10-18T17:19:13.715Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_usdc",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "BPS_TOTAL",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint16",
+          "internalType": "uint16"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "EVENT_CAP",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MAX_SPRAY",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MAX_UNLOCK_DELAY",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MIN_SPRAY",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "balance",
+      "inputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "cancelEvent",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "closeEvent",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "contributions",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "createEvent",
+      "inputs": [
+        {
+          "name": "name",
+          "type": "string",
+          "internalType": "string"
+        },
+        {
+          "name": "recipients",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "sharesBps",
+          "type": "uint16[]",
+          "internalType": "uint16[]"
+        },
+        {
+          "name": "mode",
+          "type": "uint8",
+          "internalType": "enum Spray.Mode"
+        },
+        {
+          "name": "unlockAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "ngnPerUsd",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "events",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "name",
+          "type": "string",
+          "internalType": "string"
+        },
+        {
+          "name": "host",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "mode",
+          "type": "uint8",
+          "internalType": "enum Spray.Mode"
+        },
+        {
+          "name": "status",
+          "type": "uint8",
+          "internalType": "enum Spray.Status"
+        },
+        {
+          "name": "unlockAt",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "ngnPerUsd",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "totalSprayed",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getContribution",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "contributor",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getEvent",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct Spray.Event",
+          "components": [
+            {
+              "name": "name",
+              "type": "string",
+              "internalType": "string"
+            },
+            {
+              "name": "host",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "recipients",
+              "type": "address[]",
+              "internalType": "address[]"
+            },
+            {
+              "name": "sharesBps",
+              "type": "uint16[]",
+              "internalType": "uint16[]"
+            },
+            {
+              "name": "mode",
+              "type": "uint8",
+              "internalType": "enum Spray.Mode"
+            },
+            {
+              "name": "status",
+              "type": "uint8",
+              "internalType": "enum Spray.Status"
+            },
+            {
+              "name": "unlockAt",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "ngnPerUsd",
+              "type": "uint256",
+              "internalType": "uint256"
+            },
+            {
+              "name": "totalSprayed",
+              "type": "uint256",
+              "internalType": "uint256"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "nextEventId",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "refund",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "settle",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "spray",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "displayName",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "usdc",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IERC20"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "EventCancelled",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "EventClosed",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "EventCreated",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "host",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        },
+        {
+          "name": "mode",
+          "type": "uint8",
+          "indexed": false,
+          "internalType": "enum Spray.Mode"
+        },
+        {
+          "name": "unlockAt",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "ngnPerUsd",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Refunded",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "contributor",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Settled",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "totalAmount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Sprayed",
+      "inputs": [
+        {
+          "name": "eventId",
+          "type": "uint256",
+          "indexed": true,
+          "internalType": "uint256"
+        },
+        {
+          "name": "from",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "displayName",
+          "type": "string",
+          "indexed": false,
+          "internalType": "string"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "timestamp",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Withdrawn",
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "AlreadySettled",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "AmountOutOfRange",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "EventCapExceeded",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "EventNotFound",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidDisplayName",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidMode",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidName",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidRate",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidRecipients",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidShares",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidUnlockAt",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotCancelled",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotHost",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotLIVE",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotOpen",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotPOT",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NothingToRefund",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NothingToWithdraw",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ReentrancyGuardReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "TooEarly",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "TooLate",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ZeroAddress",
+      "inputs": []
+    }
+  ]
+}
